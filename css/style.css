@@ -1,0 +1,1052 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+
+.page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 16px 100px;
+}
+
+/* =========================
+   PAGE LABEL
+========================= */
+
+.page-label {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   WALLET HEADER CARD
+========================= */
+
+.wallet-header-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.wallet-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wallet-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.generate-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   BALANCE CARD
+========================= */
+
+.balance-card-new {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  border-radius: 22px;
+  padding: 28px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.balance-label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.balance-amount {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 12px 0 24px;
+  letter-spacing: -1px;
+}
+
+.balance-actions-new {
+  display: flex;
+  gap: 14px;
+}
+
+.balance-actions-new button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: white;
+  color: #1e3a8a;
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* =========================
+   ASSETS HEADER
+========================= */
+
+.assets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.assets-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.assets-count {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* =========================
+   ASSET CARDS
+========================= */
+
+.asset-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.asset-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.asset-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+}
+
+.asset-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.asset-symbol {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.asset-right {
+  text-align: right;
+}
+
+.asset-amount {
+  font-weight: 600;
+  margin: 0;
+}
+
+.asset-usd {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Asset Colors */
+
+.naira {
+  background: #16a34a;
+}
+
+.tether {
+  background: #14b8a6;
+}
+
+.bitcoin {
+  background: #f7931a;
+}
+
+/* =========================
+   INFO CARD
+========================= */
+
+.info-card {
+  background: #f1f5f9;
+  border-radius: 16px;
+  padding: 18px;
+  font-size: 13px;
+  color: #475569;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+
+
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav-new {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 0;
+}
+
+.bottom-nav-new a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.bottom-nav-new a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ===== PREMIUM SHADOW SYSTEM ===== */
+
+:root {
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 16px 35px rgba(0, 0, 0, 0.08);
+  --transition-smooth: all 0.25s ease;
+}
+
+.wallet-header-card,
+.balance-card-new,
+.asset-card{
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-smooth);
+}
+
+.wallet-header-card:hover,
+.balance-card-new:hover,
+.asset-card:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+button {
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1)
+}
+
+.btn-light:hover {
+  transform: translateY(-2px);
+  background: #f1f3f5;
+}
+
+.btn-glass:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.asset-card:hover .asset-icon-box {
+  transform: scale(1.05);
+  transition: var(--transition-smooth);
+}
+
+.asset-icon-box{
+  transition: var(--transition-smooth);
+}
+
+.bottom-nav-new a {
+  transition: var(--transition-smooth);
+}
+
+.bottom-nav-new a:hover {
+  opacity: 0.7;
+}
+
+.bottom-nav-new a.active {
+  font-weight: 600;
+  position: relative;
+}
+
+.bottom-nav-new a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #000000;
+  border-radius: 50%;
+}
+
+/* =========================
+   Background Gradients
+========================= */
+
+body {
+  background: linear-gradient(to bottomm, #f8f9fa, #ffffff);
+}
+
+
+
+
+/* =========================
+   Info Card Link
+========================= */
+
+.info-link {
+  text-decoration: none;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #d5dded;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/*
+.info-card:hover {
+  background: #d5dded;
+  transform: scale(1.05);
+}  */
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.page-title{
+  margin-bottom:24px;
+  font-size:22px;
+  font-weight:600;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-bar{
+  width:100%;
+  padding:14px;
+  border-radius:var(--radius-md);
+  border:1px solid var(--border);
+  font-size:14px;
+  outline:none;
+  background:var(--card-bg);
+  color:var(--text-main);
+}
+
+.search-bar:focus{
+  border-color:var(--primary);
+}
+
+
+/* =========================
+   MARKET ROW
+========================= */
+
+.market-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.market-row:last-child{
+  border-bottom:none;
+}
+
+.market-left{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.market-right{
+  text-align:right;
+}
+
+.market-right p{
+  font-weight:600;
+}
+
+
+/* =========================
+   COIN ICONS
+========================= */
+
+.coin-icon{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:700;
+  font-size:16px;
+}
+
+.coin-icon.btc{
+  background:#f7931a;
+}
+
+.coin-icon.eth{
+  background:#627eea;
+}
+
+.coin-icon.usdt{
+  background:#26a17b;
+}
+
+.coin-icon.sol{
+  background:#9945ff;
+}
+
+
+/* =========================
+   PRICE CHANGE COLORS
+========================= */
+
+.positive{
+  color:var(--positive);
+  font-size:13px;
+}
+
+.negative{
+  color:var(--negative);
+  font-size:13px;
+}
+
+.neutral{
+  color:var(--text-muted);
+  font-size:13px;
+}
+
+.market-row:hover{
+  background:rgba(0,0,0,0.03);
+  cursor:pointer;
+}
+
+
+/* ============================= */
+/* MARKETPLACE UI */
+/* ============================= */
+
+.market-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.market-logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:700;
+font-size:18px;
+}
+
+.market-logo-box{
+width:36px;
+height:36px;
+background:#1f6feb;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:bold;
+}
+
+.list-btn{
+background:#1f6feb;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+
+/* SEARCH */
+
+.market-search{
+margin-bottom:14px;
+}
+
+.market-search input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #e5e7eb;
+background:#f5f7fb;
+}
+
+
+/* FILTERS */
+
+.market-filters{
+display:flex;
+gap:10px;
+margin-bottom:18px;
+flex-wrap:wrap;
+}
+
+.filter-btn{
+padding:8px 12px;
+border-radius:20px;
+border:1px solid #e5e7eb;
+background:white;
+font-size:13px;
+cursor:pointer;
+}
+
+.filter-btn.primary{
+background:#e8f0ff;
+color:#1f6feb;
+border:none;
+}
+
+
+/* ACTIVE OFFERS */
+
+.market-section-title{
+font-size:16px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.market-offer{
+background:white;
+border:1px solid #e6e9ef;
+border-radius:12px;
+padding:14px;
+margin-bottom:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.offer-left{
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.offer-user{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:600;
+}
+
+.user-avatar{
+width:30px;
+height:30px;
+background:#e5e7eb;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:12px;
+font-weight:600;
+}
+
+.badge{
+background:#e8f8f0;
+color:#16a34a;
+font-size:10px;
+padding:2px 6px;
+border-radius:6px;
+}
+
+.offer-price{
+font-size:18px;
+font-weight:700;
+}
+
+.offer-rate{
+font-size:12px;
+color:#6b7280;
+}
+
+.offer-available{
+font-size:12px;
+color:#6b7280;
+}
+
+
+/* EXCHANGE BUTTON */
+
+.exchange-btn{
+background:#1f6feb;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* =========================
+   MARKETPLACE STYLES
+   ========================= */
+
+.market-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.market-logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:18px;
+}
+
+.market-logo-box{
+width:36px;
+height:36px;
+background:#1e6fff;
+border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:700;
+}
+
+.list-btn{
+background:#1e6fff;
+color:white;
+border:none;
+padding:10px 14px;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+}
+
+.list-btn:hover{
+opacity:.9;
+}
+
+
+/* SEARCH */
+
+.market-search{
+margin-bottom:15px;
+}
+
+.market-search input{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #e4e7ec;
+background:#f7f9fc;
+font-size:14px;
+}
+
+
+/* FILTERS */
+
+.market-filters{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+.filter-btn{
+border:1px solid #e4e7ec;
+background:white;
+padding:8px 12px;
+border-radius:20px;
+font-size:13px;
+cursor:pointer;
+}
+
+.filter-btn.primary{
+background:#e8f1ff;
+border-color:#1e6fff;
+color:#1e6fff;
+font-weight:600;
+}
+
+
+/* SECTION TITLE */
+
+.market-section-title{
+font-size:16px;
+font-weight:600;
+margin-bottom:15px;
+}
+
+
+/* OFFER CARD */
+
+.market-offer{
+background:white;
+border-radius:14px;
+padding:16px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+border:1px solid #eef1f5;
+}
+
+.offer-left{
+display:flex;
+flex-direction:column;
+gap:4px;
+}
+
+
+/* USER */
+
+.offer-user{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+font-weight:600;
+}
+
+.user-avatar{
+width:28px;
+height:28px;
+border-radius:50%;
+background:#e8ecf2;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+font-weight:600;
+}
+
+.badge{
+background:#e8f6ee;
+color:#2ba24c;
+font-size:11px;
+padding:2px 6px;
+border-radius:6px;
+font-weight:600;
+}
+
+
+/* PRICE */
+
+.offer-price{
+font-size:20px;
+font-weight:700;
+margin-top:3px;
+}
+
+
+/* SUBTEXT */
+
+.offer-rate{
+font-size:12px;
+color:#667085;
+}
+
+.offer-available{
+font-size:12px;
+color:#98a2b3;
+}
+
+
+/* EXCHANGE BUTTON */
+
+.exchange-btn{
+background:#1e6fff;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+}
+
+.exchange-btn:hover{
+opacity:.9;
+}
+
+
+/* ======================
+PROFILE PAGE
+====================== */
+
+.profile-page{
+padding-bottom:80px;
+}
+
+.profile-card{
+background:white;
+border-radius:18px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+
+/* HEADER */
+
+.settings-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.settings-header h3{
+font-size:18px;
+font-weight:600;
+}
+
+.gear{
+font-size:18px;
+color:#667085;
+cursor:pointer;
+}
+
+.settingslogo{
+  text-decoration: none;
+}
+
+
+/* PROFILE TOP */
+
+.profile-top{
+text-align:center;
+margin-bottom:20px;
+}
+
+.avatar{
+position:relative;
+width:80px;
+height:80px;
+margin:auto;
+}
+
+.avatar img{
+width:100%;
+border-radius:50%;
+box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.online{
+position:absolute;
+bottom:5px;
+right:5px;
+width:14px;
+height:14px;
+background:#2ecc71;
+border-radius:50%;
+border:2px solid white;
+}
+
+
+.username{
+margin-top:10px;
+font-weight:600;
+}
+
+.user-meta{
+font-size:13px;
+color:#667085;
+}
+
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:14px;
+margin-top:16px;
+}
+
+.stat{
+background:#f7f9fc;
+padding:12px 20px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat-title{
+font-size:11px;
+color:#98a2b3;
+}
+
+.stat-value{
+font-weight:700;
+font-size:16px;
+}
+
+.blue{
+color:#1e6fff;
+}
+
+.green{
+color:#16a34a;
+}
+
+
+/* MENU */
+
+.menu-group{
+margin-top:20px;
+}
+
+.group-title{
+font-size:11px;
+color:#98a2b3;
+margin-bottom:8px;
+}
+
+
+.menu-item{
+display:flex;
+align-items:center;
+padding:14px;
+border-radius:10px;
+margin-bottom:6px;
+background:#f9fafb;
+cursor:pointer;
+transition:all .2s ease;
+}
+
+.menu-item:hover{
+background:#f1f5f9;
+transform:translateY(-1px);
+}
+
+.icon{
+margin-right:10px;
+}
+
+.arrow{
+margin-left:auto;
+color:#98a2b3;
+}
+
+
+/* VERIFIED */
+
+.verified{
+background:#e8f6ee;
+color:#2ecc71;
+font-size:11px;
+padding:3px 6px;
+border-radius:6px;
+margin-left:auto;
+margin-right:10px;
+}
+
+
+/* LOGOUT */
+
+.logout-btn{
+width:100%;
+padding:12px;
+margin-top:20px;
+border-radius:10px;
+border:1px solid #ffd6d6;
+background:#fff5f5;
+color:#e63946;
+font-weight:600;
+cursor:pointer;
+transition:.2s;
+}
+
+.logout-btn:hover{
+background:#ffe5e5;
+}
+
+
+/* VERSION */
+
+.app-version{
+text-align:center;
+font-size:11px;
+color:#98a2b3;
+margin-top:12px;
+}
