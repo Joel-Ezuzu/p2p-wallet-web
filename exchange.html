@@ -1,29 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Exchange</title>
 
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/exchange.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4d6f7c6c3e.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 
-    <div class="page">
-    <h1> Exchange Page</h1>
-    
+<div class="app">
 
-      <!-- Bottom Navigation -->
-  <nav class="bottom-nav-new">
-    <a href="wallet.html">Wallet</a>
-    <a href="marketplace.html">Market</a>
-    <a class="active" href="exchange.html">Exchange</a>
-    <a href="profile.html">Profile</a>
-  </nav>
-    </div>
+<!-- HEADER -->
+
+<div class="top-bar">
+
+<i class="fa-solid fa-arrow-left back"><a href="index.html" class="back-btn"><h1  class="back-btn" ><</h1></i></a>
+
+<h2>Exchange USDT to NGN</h2>
+
+</div>
+
+
+
+<!-- SEND SECTION -->
+
+<div class="section">
+
+<div class="section-header">
+
+<span>You Send</span>
+
+<div class="balance">Balance: 1,250.50 USDT</div>
+
+</div>
+
+<div class="currency-box send">
+
+<div class="currency-left">
+
+<div class="currency-icon usdt">
+<i class="fa-solid fa-dollar-sign"></i>
+</div>
+
+<span>USDT</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- SWITCH ICON -->
+
+<div class="swap-btn">
+
+<i class="fa-solid fa-arrow-up-arrow-down"></i>
+
+</div>
+
+
+
+<!-- RECEIVE SECTION -->
+
+<div class="section">
+
+<span class="label">You Receive</span>
+
+<div class="currency-box receive">
+
+<div class="currency-left">
+
+<div class="currency-icon ngn">
+<i class="fa-solid fa-money-bill"></i>
+</div>
+
+<span>NGN</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- EXCHANGE RATE -->
+
+<div class="rate-box">
+
+<div class="rate-top">
+
+<span>Exchange Rate</span>
+
+<span class="rate">1 USDT = 1,505.20 NGN</span>
+
+</div>
+
+<div class="rate-bottom">
+
+<span class="calc">Calculation</span>
+
+<span>100 USDT × 1,505.20</span>
+
+</div>
+
+</div>
+
+
+
+<!-- TRANSACTION SUMMARY -->
+
+<h3 class="summary-title">Transaction Summary</h3>
+
+<div class="summary-box">
+
+<div class="summary-row">
+
+<span>Service Fee</span>
+
+<span>0.50 USDT</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Network Fee</span>
+
+<span class="free">Free</span>
+
+</div>
+
+<div class="summary-row total">
+
+<span>Total to Send</span>
+
+<span>100.50 USDT</span>
+
+</div>
+
+</div>
+
+
+
+<!-- ESTIMATED TIME -->
+
+<div class="time">
+
+<i class="fa-regular fa-clock"></i>
+
+<span>Estimated completion: ~2 minutes</span>
+
+</div>
+
+
+
+<!-- CONFIRM BUTTON -->
+
+<button class="confirm-btn">
+
+Confirm & Initiate
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+
+</div>
+
 </body>
 </html>

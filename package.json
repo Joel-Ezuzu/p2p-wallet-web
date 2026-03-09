@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "tailwind": "^2.3.1"
+  }
+}
