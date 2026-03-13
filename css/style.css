@@ -1050,3 +1050,13 @@ font-size:11px;
 color:#98a2b3;
 margin-top:12px;
 }
+
+.statement-btn{
+  text-decoration: none;
+  color: #000000;
+}
+
+.logout-link{
+  text-decoration: none;
+  color:#e63946;
+}

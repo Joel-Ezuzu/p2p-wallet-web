@@ -1,0 +1,208 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f3f6fb;
+display:flex;
+justify-content:center;
+padding:30px 20px;
+}
+
+/* APP CONTAINER */
+
+.app{
+max-width:420px;
+background:white;
+border-radius:20px;
+padding:28px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:16px;
+}
+
+.header h2{
+font-size:20px;
+font-weight:600;
+}
+
+.back-btn{
+font-size:18px;
+color:#111;
+text-decoration:none;
+}
+
+
+/* SUBTEXT */
+
+.subtitle{
+color:#64748b;
+font-size:15px;
+line-height:1.5;
+margin-bottom:24px;
+}
+
+
+/* FORM */
+
+.form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.input-group{
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.input-group label{
+font-size:14px;
+font-weight:500;
+color:#111;
+}
+
+.input-group input{
+padding:14px;
+border-radius:12px;
+border:1px solid #e2e8f0;
+font-size:15px;
+background:#f8fafc;
+}
+
+
+/* PASSWORD */
+
+.password-box{
+display:flex;
+align-items:center;
+border:1px solid #e2e8f0;
+border-radius:12px;
+background:#f8fafc;
+padding-right:12px;
+}
+
+.password-box input{
+border:none;
+flex:1;
+background:transparent;
+}
+
+.password-box i{
+color:#64748b;
+}
+
+
+/* BUTTON */
+
+.actions{
+margin-top:22px;
+}
+
+.primary-btn{
+width:100%;
+padding:16px;
+border:none;
+border-radius:14px;
+background:#1765d1;
+color:white;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(23,101,209,0.25);
+}
+
+
+/* LOGIN */
+
+.login{
+text-align:center;
+font-size:15px;
+color:#64748b;
+margin-top:18px;
+}
+
+.login a{
+color:#1765d1;
+text-decoration:none;
+font-weight:500;
+}
+
+
+/* DIVIDER */
+
+.social{
+margin-top:20px;
+}
+
+.divider{
+display:flex;
+align-items:center;
+gap:12px;
+color:#94a3b8;
+font-size:14px;
+margin-bottom:16px;
+}
+
+.divider::before,
+.divider::after{
+content:"";
+flex:1;
+height:1px;
+background:#e2e8f0;
+}
+
+
+/* SOCIAL BUTTONS */
+
+.social-buttons{
+display:flex;
+gap:14px;
+}
+
+.social-btn{
+flex:1;
+padding:12px;
+border-radius:12px;
+border:1px solid #e2e8f0;
+background:white;
+font-size:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+cursor:pointer;
+}
+
+
+/* TERMS */
+
+.terms{
+margin-top:20px;
+text-align:center;
+font-size:13px;
+color:#64748b;
+line-height:1.5;
+}
+
+.terms a{
+color:#1765d1;
+text-decoration:none;
+}
+
+.sign-up-link{
+    text-decoration: none;
+    color: white;
+}
